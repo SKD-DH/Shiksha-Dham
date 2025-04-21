@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
     <head> 
         <meta charset="utf-8">
-        <title>Weather App Landing page</title>
+        <title>Shiksha Dham</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
         <link rel="icon" type="image/png" href="favicon.ico">
@@ -142,7 +142,7 @@
                             <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
                                 <div class="head_title text-center">
                                     <h2>Perfect Features</h2>
-                                    <h5>Only necessary</h5>
+                                    <h5>Empowering generations to become geniuse</h5>
                                 </div>
                             </div>
 
@@ -152,9 +152,8 @@
                                         <i class="icon icon-diamond6"></i>
                                     </div>
                                     <div class="f_item_text">
-                                        <h3>Usability</h3>
-                                        <p>Sometimes the simplest things are the hardest to find. 
-                                            So we created a new line for everyday life</p>
+                                        <h3>Live Classes</h3>
+                                        <p>SLive Class offers students real time interaction, immediate doubt-solving and enhanced engagement.</p>
                                     </div>
                                 </div>
                             </div>
@@ -164,9 +163,8 @@
                                         <i class="icon icon-layers2"></i>
                                     </div>
                                     <div class="f_item_text">
-                                        <h3>Parallax Effect</h3>
-                                        <p>Sometimes the simplest things are the hardest to find. 
-                                            So we created a new line for everyday life</p>
+                                        <h3>Recorded Class Backup</h3>
+                                        <p>Recorded class provides students with flexibility, allowing them to access content at their convenience and revisit lessons for better comprehension</p>
                                     </div>
                                 </div>
                             </div>
@@ -176,9 +174,8 @@
                                         <i class="icon icon-business-32"></i>
                                     </div>
                                     <div class="f_item_text">
-                                        <h3>Unlimites Colors</h3>
-                                        <p>Sometimes the simplest things are the hardest to find. 
-                                            So we created a new line for everyday life</p>
+                                        <h3>PDF Notes</h3>
+                                        <p>PDF availablity for facilitating convenient review and deeper understanding of the content.</p>
                                     </div>
                                 </div>
                             </div>
@@ -372,6 +369,92 @@
                     </div><!-- End off row -->
                 </div><!-- End off container -->
             </section><!-- End off People Section-->
+
+
+
+
+<section id="contact" class="contact m-top-100">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+</head>
+<body class="bg-white p-6">
+  <div class="max-w-md mx-auto bg-white rounded-2xl p-6 shadow-[0_0_0_12px_rgba(0,0,0,0.05)]">
+    <h2 class="text-black font-semibold text-lg mb-1.5">Send Us a Message</h2>
+    <p class="text-gray-700 text-sm mb-4">Please fill in the form below to get in touch with us.</p>
+    <form id="contactForm">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        <input
+          type="text"
+          placeholder="First name"
+          class="bg-gray-100 text-gray-400 text-xs rounded px-3 py-3 placeholder-gray-400 focus:outline-none"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Last name"
+          class="bg-gray-100 text-gray-400 text-xs rounded px-3 py-3 placeholder-gray-400 focus:outline-none"
+          required
+        />
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        <input
+          type="email"
+          placeholder="Email address"
+          class="bg-gray-100 text-gray-400 text-xs rounded px-3 py-3 placeholder-gray-400 focus:outline-none"
+          required
+        />
+        <input
+          type="tel"
+          placeholder="Phone Number"
+          class="bg-gray-100 text-gray-400 text-xs rounded px-3 py-3 placeholder-gray-400 focus:outline-none"
+        />
+      </div>
+      <textarea
+        rows="4"
+        placeholder="Message"
+        class="bg-gray-100 text-gray-400 text-xs rounded w-full px-3 py-3 placeholder-gray-400 resize-none mb-3 focus:outline-none"
+        required
+      ></textarea>
+      <label class="flex items-center text-xs text-gray-700 mb-4">
+        <input type="checkbox" id="termsCheckbox" class="mr-2" />
+        I've read and agree with
+        <a href="#" class="underline text-black ml-1">Terms of Service</a> and
+        <a href="#" class="underline text-black ml-1">Privacy Policy</a>
+      </label>
+      <button
+        type="submit"
+        id="submitBtn"
+        disabled
+        class="bg-black text-white text-xs font-semibold rounded px-4 py-2 disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+
+  <script>
+    const checkbox = document.getElementById('termsCheckbox');
+    const submitBtn = document.getElementById('submitBtn');
+
+    checkbox.addEventListener('change', () => {
+      submitBtn.disabled = !checkbox.checked;
+    });
+  </script>
+</body>
+</html>
+
+</section>
+
+
+
 
 
             <!--App Download Section-->
