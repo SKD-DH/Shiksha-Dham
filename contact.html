@@ -3,7 +3,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <title>
-   Contact Information Form
+   Shiksha Dham - Contact Form
   </title>
   <script src="https://cdn.tailwindcss.com">
   </script>
@@ -31,7 +31,6 @@
         <p>
          +91 8384064094
         </p>
-    
        </div>
       </div>
       <div class="flex items-center space-x-4">
@@ -39,7 +38,7 @@
        </i>
        <div class="text-sm leading-tight">
         <p>
-        careshikshadham@gmail.com
+         careshikshadham@gmail.com
         </p>
        </div>
       </div>
@@ -72,7 +71,7 @@
     <img alt="Decorative overlapping dark black and gray circles on bottom right corner" aria-hidden="true" class="absolute bottom-8 right-8 w-40 h-40 rounded-full opacity-20 pointer-events-none select-none" height="160" src="https://storage.googleapis.com/a1aa/image/f11aba80-3ec0-4c0a-ce17-6c7893caeb0c.jpg" width="160"/>
    </div>
    <!-- Right white form panel -->
-   <form action="#" class="bg-white p-8 md:w-1/2 rounded-b-2xl md:rounded-r-2xl md:rounded-bl-none space-y-6" method="POST">
+   <form action="https://info.shikshadham.com/" class="bg-white p-8 md:w-1/2 rounded-b-2xl md:rounded-r-2xl md:rounded-bl-none space-y-6" method="POST" onsubmit="return validateForm()">
     <div class="flex flex-col sm:flex-row sm:space-x-6 space-y-6 sm:space-y-0">
      <div class="flex flex-col w-full">
       <label class="text-sm font-normal text-gray-900 mb-1" for="fullname">
@@ -106,12 +105,26 @@
           Promotional / Informational Messages.
      </label>
     </div>
-    <button 
-     href="https://info.shikshadham.com/contact"
-     class="bg-gradient-to-b from-[#0a122a] to-[#121c2a] text-white text-sm font-normal rounded-md px-6 py-2 mt-2 w-max" type="submit">
+    <button class="bg-gradient-to-b from-[#0a122a] to-[#121c2a] text-white text-sm font-normal rounded-md px-6 py-2 mt-2 w-max disabled:opacity-50" id="submitBtn" type="submit" disabled>
      Submit Details
     </button>
    </form>
   </div>
+  <script>
+   const checkbox = document.getElementById('authorize');
+    const submitBtn = document.getElementById('submitBtn');
+
+    checkbox.addEventListener('change', () => {
+      submitBtn.disabled = !checkbox.checked;
+    });
+
+    function validateForm() {
+      if (!checkbox.checked) {
+        alert('Please authorize to send notifications by checking the box.');
+        return false;
+      }
+      return true;
+    }
+  </script>
  </body>
 </html>
